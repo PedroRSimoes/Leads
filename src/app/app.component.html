@@ -1,0 +1,27 @@
+<p-tabView class="h-tabview">
+  <p-tabPanel header="Invited">
+    <app-card *ngFor="let item of leads | leadPipe:false"
+    [name] = "item.name"
+    [id] = "item.id"
+    [username] = "item.username"
+    [content]='"Lorem ipsum dolor sit amet, consectetur adipiscing elit"'
+    [accepted] = "item.accepted"
+  >
+  </app-card>
+
+  </p-tabPanel>
+
+  <p-tabPanel header="Accept">
+
+  <app-accepted-card
+
+
+  [content]='"Lorem ipsum dolor sit amet, consectetur adipiscing elit"'>
+
+</app-accepted-card>
+
+</p-tabPanel>
+
+</p-tabView>
+
+
