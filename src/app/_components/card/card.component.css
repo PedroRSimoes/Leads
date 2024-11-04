@@ -1,7 +1,7 @@
 .card {
   border: 1px solid #cfcdcd;
   border-radius: 0px;
-  padding: 16px;
+  padding: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: auto;
   width: auto;
@@ -11,14 +11,37 @@
   font-weight: bold;
   margin-bottom: 8px;
   display: flex;
-
 }
 
 .card-body {
   color: #333;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.cor {
+
+  color: rgba(75, 74, 74, 0.822);
+}
+
+.button-space {
 
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
+}
 
+.label-name {
+
+  font-size: 12px;
+}
+
+.info-name{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }

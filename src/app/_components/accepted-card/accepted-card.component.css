@@ -11,14 +11,33 @@
   font-weight: bold;
   margin-bottom: 8px;
   display: flex;
-
 }
 
 .card-body {
   color: #333;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.cor {
+
+  color: rgba(75, 74, 74, 0.822);
+}
+
+.cor-infos {
+  color: rgb(250, 87, 28);
+}
+
+.label-name {
+
+  font-size: 12px;
+}
+
+.info-name{
 
   display: flex;
   flex-direction: row;
-  gap: 20px;
-
+  align-items: center;
+  gap: 10px;
 }

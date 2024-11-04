@@ -1,7 +1,6 @@
 <div  class="card">
 
   <div  class="card-header">
-
         <p-avatar
           label={{name.charAt(0)}}
           styleClass="mr-2"
@@ -16,30 +15,24 @@
 
   <div class="card-body">
     <div class="info-name">
-
     <i class="pi pi-map-marker"></i>
-    <p class="cor">Country:</p>
+    <p class="cor">Street: {{street}}</p>
     </div>
     <div class="info-name">
       <i class="pi pi-briefcase"></i>
-      <p class="cor">Job: {{username}}</p>
+      <p class="cor">Job: {{company}}</p>
     </div>
-      <p class="cor">ID:{{id}}</p>
+      <p class="cor">ID: {{id}}</p>
     </div>
-
-    <div class="border: 1px solid #cfcdcd;">
-      <p>{{ content }}</p>
-
+    <div>
+      <p class = "cor">{{catchPhrase}} </p>
     </div>
 
    <div class="button-space">
-
     <p-button label="Accept" severity="warning" (onClick)="accept()" />
     <p-button label="Decline" severity="secondary" (onClick)="decline()"  />
     <p>$00.00 Lead Invitation</p>
-
 </div>
-
 </div>
 
 

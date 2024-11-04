@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
@@ -23,15 +23,15 @@ export class CardComponent {
   @Input() model: Lead;
   @Input() id: number;
   @Input() name: string;
-  @Input() username: string;
   @Input() email: string;
   @Input() accepted: boolean;
   @Input() declined: boolean;
   @Input() content: string;
   @Input() street: string;
-
+  @Input() company: string;
+  @Input() zipcode: number;
+  @Input() catchPhrase: string;
   data = 'November 1 2024 @ 11:38pm';
-
   @Output() dataEmitter = new EventEmitter<number>();
   @Output() declineEmitter = new EventEmitter<number>();
 

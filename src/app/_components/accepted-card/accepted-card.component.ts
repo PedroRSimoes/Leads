@@ -22,9 +22,11 @@ export class AcceptedCardComponent {
   @Input() content: string;
   @Input() id: number;
   @Input() name: string;
-  @Input() username: string;
   @Input() email: string;
   @Input() accepted: boolean;
+  @Input() street: string;
+  @Input() company: string;
+  @Input() zipcode: number;
 
   data = 'November 1 2024 @ 11:38pm';
 }

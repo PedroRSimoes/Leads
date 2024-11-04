@@ -2,75 +2,10 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
+.p-tabview-nav{
 
-
-
- .flex-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 0px;
-  border: 1px solid #cfcdcd;
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  gap: 80px;
 }
-
-
-
-.button-flex-container {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: 40px;
-  padding: 0px;
-  height: 40px;
-  border: 1px solid #cfcdcd;
-
-}
-
-
-.cor {
-
-  color: rgba(75, 74, 74, 0.822);
-
-}
-
-.button-space {
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 18px;
-}
-
-
-.h-tabview  {
-  margin-right: 20px;
-  justify-content: space-around;
-  display: flex;
-  min-width: 100%;
-  margin: 0px;
-  padding: 0;
-  list-style-type: none;
-  flex: 1 1 auto;
-  gap: 0;
-
-}
-
-
-
-.label-name {
-
-  font-size: 12px;
-}
-
-.info-name{
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-
-
-}
-
-
-
