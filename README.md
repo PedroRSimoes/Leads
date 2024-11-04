@@ -1,31 +1,49 @@
-# ProjetoLeads
+# Projeto Gestão de Leads
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Este é um projeto em Angular para uma página de gestão de Leads. A aplicação consiste em uma interface de usuário onde é possível visualizar e gerenciar Leads, movendo-os entre duas tabelas: "Invited" e "Accepted".
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Tabela Invited**: Contém os Leads convidados. Cada Lead aparece em um card com botões de "Aceitar" e "Rejeitar".
+- **Tabela Accepted**: Contém os Leads aceitos. Leads movidos para essa tabela são aqueles que foram aceitos na tabela "Invited".
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- TypeScript
+- HTML
+- CSS
 
-## Build
+### Estrutura das Pastas e Arquivos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **src/app/\_components**: Contém os componentes visuais do projeto.
 
-## Running unit tests
+  - **accepted-card**: Componente responsável por exibir os Leads na tabela "Accepted".
+  - **card**: Componente responsável por exibir os Leads na tabela "Invited" com os botões de "Aceitar" e "Rejeitar".
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **src/app/\_interfaces**: Define as interfaces TypeScript para o projeto, como as interfaces dos Leads.
 
-## Running end-to-end tests
+- **src/app/\_models**: Contém os modelos do projeto, definindo as estruturas de dados usadas.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **src/app/\_pipes**: Contém os pipes do projeto para manipulação de dados e formatações específicas.
 
-## Further help
+- **src/app/\_services**: Inclui os serviços do projeto para manipulação de dados, como a lógica de aceitar ou rejeitar um Lead.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **src/app**: Diretório principal da aplicação que contém arquivos centrais do Angular, como `app.component.ts`, `app.module.ts`, `app.routes.ts`, entre outros.
 
-# Leads
+## Pré-requisitos
 
-Repositorio Criado para projeto cards de Leads
+Antes de começar, verifique se você possui as seguintes ferramentas instaladas:
+
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [Angular CLI](https://angular.io/cli) (instale globalmente com `npm install -g @angular/cli`)
+
+Se você não tiver o Angular CLI, pode instalá-lo globalmente com o seguinte comando:
+
+`bash`
+npm install -g @angular/cli
+
+### Executando o Projeto
+
+Para executar o projeto, abra o terminal e execute o comando: **ng serve**
+Posteriormente, navegue para o endereço **http://localhost:4200/**
