@@ -31,14 +31,33 @@ import { LeadPipePipe } from './_pipes/lead-pipe.pipe';
 export class AppComponent {
   title = 'Lead';
   leads: Lead[];
+  declined: any;
 
   constructor(private leadService: LeadService) {}
+
+  receivedData: number;
+  declinedData: number;
+
+  receiveData(data: number) {
+    this.receivedData = data;
+    let index = this.leads.findIndex((item) => item.id === data);
+    let leadRemoved = this.leads.splice(index, 1);
+    leadRemoved[0].accepted = true;
+    this.leads.push(leadRemoved[0]);
+  }
+
+  declineData(data: number) {
+    this.declinedData = data;
+    let index = this.leads.findIndex((item) => item.id === data);
+    let leadRemoved = this.leads.splice(index, 1);
+  }
 
   ngOnInit(): void {
     this.getLeads();
   }
+
   getLeads() {
-    if (this.leads.length === 0) {
+    if (this.leads === undefined) {
       this.leadService.getLead().subscribe((response) => {
         this.leads = response;
         this.leads.forEach((x) => (x.accepted = false));

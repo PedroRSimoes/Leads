@@ -1,6 +1,8 @@
 <p-tabView class="h-tabview">
   <p-tabPanel header="Invited">
     <app-card *ngFor="let item of leads | leadPipe:false"
+    (dataEmitter)="receiveData($event)"
+    (declineEmitter)="declineData($event)"
     [name] = "item.name"
     [id] = "item.id"
     [username] = "item.username"
@@ -13,10 +15,15 @@
 
   <p-tabPanel header="Accept">
 
-  <app-accepted-card
+  <app-accepted-card *ngFor="let item of leads | leadPipe:true"
+    [name] = "item.name"
+    [id] = "item.id"
+    [username] = "item.username"
+    [content]='"Lorem ipsum dolor sit amet, consectetur adipiscing elit"'
+    [accepted] = "item.accepted"
 
 
-  [content]='"Lorem ipsum dolor sit amet, consectetur adipiscing elit"'>
+    [content]='"Lorem ipsum dolor sit amet, consectetur adipiscing elit"'>
 
 </app-accepted-card>
 

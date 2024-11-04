@@ -4,7 +4,6 @@ import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { TabViewModule } from 'primeng/tabview';
 import { AvatarGroupModule } from 'primeng/avatargroup';
-import { Lead } from '../../_models/lead';
 
 @Component({
   selector: 'app-accepted-card',
@@ -26,7 +25,6 @@ export class AcceptedCardComponent {
   @Input() username: string;
   @Input() email: string;
   @Input() accepted: boolean;
-  @Input() model: Lead;
 
   data = 'November 1 2024 @ 11:38pm';
 }

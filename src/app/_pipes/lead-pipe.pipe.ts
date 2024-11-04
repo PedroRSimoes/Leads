@@ -11,6 +11,6 @@ export class LeadPipePipe implements PipeTransform {
     if (!items) {
       return items;
     }
-    return items.filter((item) => item.accepted === false);
+    return items.filter((item) => item.accepted === accepted);
   }
 }
