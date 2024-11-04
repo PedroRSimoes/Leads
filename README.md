@@ -45,5 +45,5 @@ npm install -g @angular/cli
 
 ### Executando o Projeto
 
-Para executar o projeto, abra o terminal e execute o comando: **ng serve**
-Posteriormente, navegue para o endereço **http://localhost:4200/**
+- Para executar o projeto, abra o terminal e execute o comando: **ng serve**
+- Posteriormente, navegue para o endereço **http://localhost:4200/**
